@@ -7,7 +7,20 @@ $(document).ready(function(){
         voyboy.append("<p>"+response.streams[2].game+"</p>");
         console.log(response);
     };
-    $.getJSON(url,callback);
+    //$.getJSON(url,callback);
+
+    $.ajax({
+        url,
+        type:"GET",
+        datatype:JSONP,
+        success:function(response){
+        var voyboy =$("#VoyBoy");
+        var nightblue3;
+        var wingsofdeath;
+        voyboy.append("<p>"+response.streams[2].game+"</p>");
+        console.log(response);
+    }
+    });
     
 
 });
