@@ -12,13 +12,13 @@ $(document).ready(function(){
     $.ajax({
         url,
         type:"GET",
-        datatype:JSONP,
+        datatype:"jsonp",
         success:function(response){
         var voyboy =$("#VoyBoy");
         var nightblue3;
         var wingsofdeath;
         voyboy.append("<p>"+response.streams[2].game+"</p>");
-        console.log(response.streams[2].game);
+        console.log(response.streams);
     }
     });
     
