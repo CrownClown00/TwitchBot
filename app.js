@@ -5,7 +5,7 @@ $(document).ready(function(){
         var nightblue3;
         var wingsofdeath;
         voyboy.append("<p>"+response.streams[2].game+"</p>");
-        console.log(response);
+        //console.log(response);
     };
     //$.getJSON(url,callback);
 
